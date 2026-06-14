@@ -55,6 +55,24 @@
  },
  {
   "directory": "/root/MIT-STM8/stopky",
+  "file": "src/uart1.c",
+  "arguments": [
+   "sdcc",
+   "-c",
+   "-Iinc",
+   "-I../SPL/inc",
+   "-I/usr/local/stow/sdcc-4.4.0/share/sdcc/include",
+   "-DSTM8S208",
+   "-D_SDCC",
+   "-D_SDCC_",
+   "-D__SDCC",
+   "-D__SDCC__",
+   "-DSDCC_VERSION=40000",
+   "src/uart1.c"
+  ]
+ },
+ {
+  "directory": "/root/MIT-STM8/stopky",
   "file": "src/delay.c",
   "arguments": [
    "sdcc",

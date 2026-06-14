@@ -27,8 +27,11 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm8s_it.h"
-
+#include "main.h"
 #include "milis.h"
+
+uint32_t cas;
+uint8_t stav;
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -298,6 +301,14 @@ INTERRUPT_HANDLER(TIM1_CAP_COM_IRQHandler, 12)
   */
  INTERRUPT_HANDLER(TIM3_UPD_OVF_BRK_IRQHandler, 15)
 {
+//rutina přerušení pro tim 3
+TIM3_ClearFlag(TIM3_FLAG_UPDATE);
+if (stav==1){
+   cas+=1; // inkrementování proměnné čas když jsoou stopky spuštěny
+}
+
+
+ 
   /* In order to detect unexpected events during development,
      it is recommended to set a breakpoint on the following instruction.
   */
