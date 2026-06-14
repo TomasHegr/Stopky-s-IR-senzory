@@ -26,7 +26,7 @@ Celý kód je okomentovaný v main.c a stm8_it.c, zde je stručný popis funkce 
 1. Timer je nastavený na 1 ms a každou 1 ms skáče do rutiny přerušení.
 2. V rutině přerušení je podmínka, která povoluje inkrementaci globální proměnné čas
 3. Když mávneme třeba rukou před prvním snímačem, tak se splní podmínka v mainu a v rutině přerušení se povolí inkrementace proměnné čas
-4. V pruběhu zvyšování proměnné se její hodnota vypisuje,v mainu je výpočet napřevod, aby to vypisovalo sekundy a milisekundy
+4. V pruběhu zvyšování proměnné se její hodnota vypisuje, v mainu je výpočet na převod, aby to vypisovalo sekundy a milisekundy
 5. Pokud mávneme třeba rukou před druhým snímačem, tak se podmínka v mainu zastaví v rutině přerušení timeru inkrementaci proměnné čas a výsledný změřený čas se vypíše do terminálu
 6. V mainu v podmínkách pro senzory jsou ještě kódy pro LED diody, aby svítily jak vyžaduje zadání
 
@@ -42,4 +42,4 @@ Zapojeno na nepájivém poli, místo dvou LED diod (zelené a červené) je v za
 
 Zhodnocení
 -----------------------
-Svůj závěrečný projekt do mikroprocesorové techniky bych ohodnotil známkou 1. Projekt jsem si vymyslel sám a také ho sám naprogramoval. Neměl jsem nějaké výrazné potíže, jediné co mi dělalo problém byl výpis aktuálního času při spuštění stopek, tak jak jsem chtěl. Poradil jsem se s ai a na základě ai jsem do printu pro výpis aktuálního času přidal \r, což dělá to, že výpis je na jednom řádku. Ještě jsem si zjistil jak udělat převod času na milisekundy a jak je vypsat. 
+Projekt jsem si vymyslel sám a také ho sám naprogramoval.V závěrečném projektu jsem si zopakoval TIMER, UART, rutinu přerušení timeru a reakci na nástupnou a sestupnou hranu. Neměl jsem nějaké výrazné potíže, jediné co mi dělalo problém byl výpis aktuálního času při spuštění stopek, tak jak jsem chtěl. Zjistil jsem si, že do printu pro výpis aktuálního času můžu přidat \r, což udělá to, že výpis je na jednom řádku, tak jak jsem chtěl. Ještě jsem si zjistil, jak správně spočítat převod času na milisekundy. Myslím si, že zjištění těchto dvou věcí je drobnost, a tak svůj závěrečný projekt do mikroprocesorové techniky bych ohodnotil známkou 1.
