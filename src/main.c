@@ -72,8 +72,8 @@ uint32_t prevod_cas_ms;
 
             if (!PUSH(START) && start_active) { //podmínka pro spuštění stopek (reakce na sestupnou hranu)
             
-            cas = 0;
-            stav = 1;
+            cas = 0; // ošetření aby měření bylo spuštěno od nuly
+            stav = 1; // globální proměnná, která v rutině přerušení povoluje inkrementaci proměnné čas
             printf("Váš čas byl právě odstartován!\n");
             LOW(ZELENA);
             HIGH(CERVENA);
