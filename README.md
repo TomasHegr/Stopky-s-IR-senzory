@@ -18,7 +18,7 @@ Do projektu ještě přidejte 2 LED diody a v programu to udělejte tak, aby prv
 Schéma zapojení
 -----------------------
 
-![schema zapojení](./docs/mit_schema_verze3.svg)
+![schema zapojení](./docs/finalni_verze_schema.svg)
 
 Popis funkce kódu
 -----------------------
