@@ -45,7 +45,7 @@ void init(void)
         TIM3_PRESCALER_16,1000 - 1); //nastavení timeru pro 1ms
         TIM3_Cmd(ENABLE);            
     TIM3_ITConfig(TIM3_IT_UPDATE,ENABLE); 
-    enableInterrupts();
+    enableInterrupts(); //povolení přerušení
 }
 
 
@@ -86,7 +86,7 @@ uint32_t prevod_cas_ms;
             prevod_cas_s =cas/1000;     //výpočty pro převedení času na sekundy a milisekundy
             prevod_cas_ms=cas%1000;
 
-            printf("Čas: %ld,%03ld s\r",prevod_cas_s,prevod_cas_ms); 
+            printf("Čas: %ld,%03ld s\r",prevod_cas_s,prevod_cas_ms); //vypisování aktuálního času stopek
             
         
         }

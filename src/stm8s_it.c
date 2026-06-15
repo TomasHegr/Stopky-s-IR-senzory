@@ -304,7 +304,7 @@ INTERRUPT_HANDLER(TIM1_CAP_COM_IRQHandler, 12)
 //rutina přerušení pro tim 3
 TIM3_ClearFlag(TIM3_FLAG_UPDATE);
 if (stav==1){
-   cas+=1; // inkrementování proměnné čas když jsoou stopky spuštěny
+   cas+=1; // inkrementování proměnné čas, když jsou stopky spuštěny
 }
 
 

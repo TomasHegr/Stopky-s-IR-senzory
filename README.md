@@ -25,9 +25,9 @@ Popis funkce kódu
 Celý kód je okomentovaný v main.c a stm8_it.c, zde je stručný popis funkce kódu.
 1. Timer je nastavený na 1 ms a každou 1 ms skáče do rutiny přerušení.
 2. V rutině přerušení je podmínka, která povoluje inkrementaci globální proměnné čas
-3. Když mávneme třeba rukou před prvním snímačem, tak se splní podmínka v mainu a v rutině přerušení se povolí inkrementace proměnné čas
+3. Když mávneme třeba rukou před prvním snímačem, tak se splní podmínka v mainu, která v rutině přerušení povolí inkrementaci proměnné čas
 4. V pruběhu zvyšování proměnné se její hodnota vypisuje, v mainu je výpočet na převod, aby to vypisovalo sekundy a milisekundy
-5. Pokud mávneme třeba rukou před druhým snímačem, tak se podmínka v mainu zastaví v rutině přerušení timeru inkrementaci proměnné čas a výsledný změřený čas se vypíše do terminálu
+5. Pokud mávneme třeba rukou před druhým snímačem, tak podmínka v mainu zastaví v rutině přerušení timeru inkrementaci proměnné čas a výsledný změřený čas se vypíše do terminálu
 6. V mainu v podmínkách pro senzory jsou ještě kódy pro LED diody, aby svítily jak vyžaduje zadání
 
 Vývojový diagram kódu
