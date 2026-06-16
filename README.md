@@ -18,7 +18,7 @@ Do projektu ještě přidejte 2 LED diody a v programu to udělejte tak, aby prv
 Schéma zapojení
 -----------------------
 
-![schema zapojení](./docs/finalni_verze_schema.svg)
+![schema zapojení](./docs/schema_oprava_uart.svg)
 
 Popis funkce kódu
 -----------------------
@@ -32,7 +32,7 @@ Celý kód je okomentovaný v main.c a stm8_it.c, zde je stručný popis funkce 
 
 Vývojový diagram kódu
 -----------------------
-![Diagram](./docs/schema_oprava_uart.svg)
+![Diagram](./docs/diagram_zlepseni2.svg)
 
 Funkční zapojení
 -----------------------
