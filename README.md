@@ -32,7 +32,7 @@ Celý kód je okomentovaný v main.c a stm8_it.c, zde je stručný popis funkce 
 
 Vývojový diagram kódu
 -----------------------
-![Diagram](./docs/diagram_zlepseni2.svg)
+![Diagram](./docs/schema_oprava_uart.svg)
 
 Funkční zapojení
 -----------------------
